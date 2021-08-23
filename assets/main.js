@@ -17,7 +17,7 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 const section = document.querySelectorAll('section[id]')
-function scollActive(){
+function scrollActive(){
     const scrollY = window.pageYOffset
 
     section.forEach(current =>{
@@ -32,7 +32,7 @@ function scollActive(){
         }
     })
 }
-window.addEventListener('scroll', scrollActivate)
+window.addEventListener('scroll', scrollActive)
 
 function scrollHeader(){
     const  header = document.getElementById('header')
