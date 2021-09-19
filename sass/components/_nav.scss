@@ -1,0 +1,102 @@
+/*===== NAV =====*/
+.nav{
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav__menu{
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      padding-top: 1.5rem;
+      text-align: center;
+      background-color: #000000;
+      transition: .4s;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    }
+  }
+  .nav_item{
+    margin-top: $mb-3;
+  }
+  .nav__link{
+    color: $first-color-lighten;
+    transition: .3s;
+  }
+  .nav__link:hover{
+    color: $first-color-light;
+  }
+  .nav__logo, .nav__toggle{
+    color: $first-color-lighten;
+  }
+  .nav__logo {
+    font-weight: $font-semi-bold;
+  }
+  .nav__toggle{
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  
+  /* Show menu */
+  .show-menu{
+    top: $header-height;
+  }
+  
+  /* Active menu */
+  .active-link{
+    position: relative;
+  }
+  .active-link::after{
+    content: '';
+    position: absolute;
+    bottom: -.07rem;
+    left: 0;
+    width: 65%;
+    height: 3px;
+    background-color: $first-color-light;
+  }
+  
+  /* Change background header */
+  .scroll-header{
+    background-color: $first-color-lighten;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+  }
+  .scroll-header .nav__logo, .scroll-header .nav__toggle, .scroll-header .nav__link{
+    color: $first-color-dark;
+  }
+  .scroll-header .nav__menu{
+    background-color: $first-color-lighten;
+  }
+  
+  /*===== SCROLL TOP =====*/
+  .scrolltop{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    color: $first-color-lighten;
+    background: $highlighted-color;
+    width: 15px;
+    border-radius: 50%;
+    z-index: $z-tooltip;
+    transition: .5s;
+    visibility: hidden;
+  }
+  .scrolltop:hover{
+    background-color: $first-color-light;
+  }
+  .scrolltop__icon{
+    font-size: 2rem;
+    color: $first-color-lighten;
+  }
+  /* Show scroll top */
+  .show-scroll{
+    visibility: visible;
+    bottom: 1.5rem;
+  }
