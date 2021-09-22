@@ -298,4 +298,28 @@ img {
   font-size: 1.125rem;
   color: #EAEEF0;
 }
+
+@media screen and (min-width: 769px) {
+  body {
+    margin: 0;
+  }
+  .home {
+    height: 100vh;
+  }
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .nav__item {
+    margin-left: var(--mb-5);
+    margin-bottom: 0;
+  }
+  .nav__toggle {
+    display: none;
+  }
+  .nav__link {
+    margin-left: 2rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

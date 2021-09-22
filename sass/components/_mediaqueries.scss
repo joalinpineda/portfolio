@@ -1,0 +1,26 @@
+
+
+@media screen and (min-width: 769px){
+    body{
+        margin: 0;
+      }
+      .home{
+        height: 100vh;
+      }
+    .nav{
+     
+      &__list{
+        display: flex;
+      }
+      &__item{
+        margin-left: var(--mb-5);
+        margin-bottom: 0;
+      }
+      &__toggle{
+        display: none;
+      }
+      &__link{
+          margin-left: $mb-4;
+      }
+    }
+}
