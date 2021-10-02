@@ -1,6 +1,7 @@
 .home{
     height: calc(100vh - 3rem);
     display: flex;
+    justify-content: center;
     align-items: center;
     color: $first-color-lighten;
     background-color: black;
@@ -36,4 +37,5 @@
             color: $first-color-lighten;
         }
     }
+   
 }
