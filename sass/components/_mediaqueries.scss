@@ -55,6 +55,24 @@
           margin-left: $mb-4;
       }
     }
+    .about{
+    &__container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+      }
+    &__skills-technologies{
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      gap: $mb-3;
+    }
+    &__data{
+      width: 30vw;
+    }
+  }
+  .section-title-me{
+    padding: $mb-4
+  }
    
 }
 
