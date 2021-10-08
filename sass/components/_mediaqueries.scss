@@ -84,6 +84,13 @@
   .card__data{
     width: 50vw;
   }
+  .contact{
+    &__me{
+      flex-direction: row;
+      justify-content: space-around;
+      margin-bottom: 4rem;
+    }
+  }
    
 }
 

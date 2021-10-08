@@ -303,7 +303,6 @@ img {
 }
 
 .about__section {
-  margin-top: 3rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -316,6 +315,10 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.about__data {
+  margin-top: 3rem;
 }
 
 .about__skills-technologies {
@@ -423,16 +426,48 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  gap: 2rem;
 }
 
 .contact__linkedin {
   display: block;
 }
 
+.contact__icon {
+  font-size: 1.5rem;
+  color: #646464;
+}
+
+.contact__mail .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 footer {
-  height: 70vh;
   background-color: black;
   color: #EAEEF0;
+  text-align: center;
+  padding: 3rem 0 3rem 0;
+}
+
+footer > h2 {
+  font-size: 18px;
+}
+
+footer > p {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+footer > span {
+  font-size: 10px;
+  color: #646464;
 }
 
 @media screen and (min-width: 768px) {
@@ -549,6 +584,15 @@ footer {
   }
   .card__data {
     width: 50vw;
+  }
+  .contact__me {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 4rem;
   }
 }
 
