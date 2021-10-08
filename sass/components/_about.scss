@@ -1,4 +1,9 @@
 .about{
+    &__section{
+        margin-top: $mb-6;
+        margin-left: auto;
+        margin-right: auto;
+    }
     &__container{
         display: flex;
         flex-direction: column;

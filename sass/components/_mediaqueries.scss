@@ -73,6 +73,14 @@
   .section-title-me{
     padding: $mb-4
   }
+  .portfolio{
+    &__card{
+      flex-direction: row;
+  }
+  }
+  .card__data{
+    width: 50vw;
+  }
    
 }
 
