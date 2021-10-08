@@ -1,0 +1,14 @@
+.contact{
+    &__section{
+        margin-top: 6rem;
+    }
+    &__me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__linkedin{
+    display: block;
+}
+
+}

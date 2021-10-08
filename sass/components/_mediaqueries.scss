@@ -76,7 +76,10 @@
   .portfolio{
     &__card{
       flex-direction: row;
-  }
+    }
+    &__card-r{
+      flex-direction: row-reverse;
+    }
   }
   .card__data{
     width: 50vw;
