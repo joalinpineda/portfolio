@@ -1,0 +1,17 @@
+footer{
+    background-color: black;
+    color: $first-color-lighten;
+    text-align: center;
+    padding: 3rem 0 3rem 0;
+    & > h2{
+        font-size: 18px;
+    }
+    & > p{
+        font-size: $smaller-font-size;
+        font-weight: 400;
+    }
+    & > span{
+        font-size: 10px;
+        color: $text-color;
+    }
+}

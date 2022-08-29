@@ -1,0 +1,39 @@
+.about{
+    &__section{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+    }
+    &__data{
+        margin-top: $header-height;
+    }
+    &__skills-technologies{
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &__skills-technologies div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: $mb-2;
+    }
+    &__skills-technologies  .fab{
+        font-size: $mb-6;
+    }
+}
+.section-subtitle, .about__skills{
+    font-weight: $font-medium;
+}
+.section-title-me, .about__skills p{
+    text-align: center;
+    color: black;
+    margin-bottom: $mb-2;
+}
+
+.about__skills > p > span{
+    font-weight: $font-bold;
+}

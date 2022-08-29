@@ -1,0 +1,102 @@
+
+
+@media screen and (min-width: 768px){
+
+    body{
+        margin: 0;
+      }
+      .home{
+        height: 100vh;
+        &__container{
+          display: grid;
+          align-items: center;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(6, 1fr);
+      }
+        &__img {
+          grid-row: 1/7;
+          grid-column: 2/3;
+          img{
+              width: 320px;
+              height: 320px;
+          }
+        }
+        &__profession, &__social{
+          grid-column: 1/2;
+        }
+        &__profession{
+          grid-row: 4/5;
+        }
+        &__social{
+          grid-row: 5/6;
+        }
+        &__data{
+          grid-row: 1/4;
+          grid-column: 1/2;
+          justify-content: center;
+        }
+        &__container > a{
+          grid-column: 1/2;
+        }
+      }
+    .nav{
+     
+      &__list{
+        display: flex;
+      }
+      &__item{
+        margin-left: var(--mb-5);
+        margin-bottom: 0;
+      }
+      &__toggle{
+        display: none;
+      }
+      &__link{
+          margin-left: $mb-4;
+      }
+    }
+    .about{
+    &__container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+      }
+    &__skills-technologies{
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
+      gap: $mb-3;
+    }
+    &__data{
+      width: 30vw;
+    }
+  }
+  .section-title-me{
+    padding: $mb-4
+  }
+  .portfolio{
+    &__card{
+      flex-direction: row;
+    }
+    &__card-r{
+      flex-direction: row-reverse;
+    }
+  }
+  .card__data{
+    width: 50vw;
+  }
+  .contact{
+    &__me{
+      flex-direction: row;
+      justify-content: space-around;
+      margin-bottom: 4rem;
+    }
+  }
+   
+}
+
+
+@media screen and (min-width: 1200px){
+  .nav{
+    justify-content: flex-start;
+  }
+}

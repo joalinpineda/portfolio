@@ -1,0 +1,129 @@
+$header-height: 3rem;
+
+// Colors
+$first-color-dark: #2F0A0D;
+$text-color: #646464;
+$first-color-light: #7B6F71;
+$first-color-lighten: #EAEEF0;
+$highlighted-color: #008DB7;
+
+//typgraphy
+$body-font: 'Poppins', sans-serif;
+$biggest-font-size: 2.5rem;
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1.125rem;
+$normal-font-size: .938rem;
+$small-font-size: .813rem;
+$smaller-font-size: .75rem;
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-bold: 700;
+
+//margin
+$mb-1: .5rem;
+$mb-2: 1rem;
+$mb-3: 1.5rem;
+$mb-4: 2rem;
+$mb-5: 2.5rem;
+$mb-6: 3rem;
+
+//z-index
+$z-normal: 1;
+$z-tooltip: 10;
+$z-fixed: 100;
+
+@mixin boton{
+  width: 130px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  text-align: center;
+  border: 2px solid $highlighted-color;
+  margin-top: $mb-2;
+  margin-inline: auto;
+}
+@media screen and (min-width: 768px){
+      $biggest-font-size: 4.5rem;
+      $h1-font-size: 2.25rem;
+      $h2-font-size: 1.5rem;
+      $h3-font-size: 1.25rem;
+      $normal-font-size: 1rem;
+      $small-font-size: .875rem;
+      $smaller-font-size: .813rem;
+  }
+  
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: $header-height 0 0 0;
+    font-family: $body-font;
+    font-size: $normal-font-size;
+    font-weight: $font-medium;
+    background-color: $first-color-lighten;
+    color: $text-color;
+    line-height: 1.6;
+}
+h1,h2,h3,ul,p{
+    margin: 0;
+  }
+  
+  h2,h3{
+    font-weight: $font-semi-bold;
+  }
+  
+  ul{
+    padding: 0;
+    list-style: none;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+ 
+  img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .section{
+    padding: 4rem 0 2rem;
+  }
+  .section-title, .section-subtitle{
+    text-align: center;
+  }
+  .section-title{
+    font-size: $h1-font-size;
+    color: $highlighted-color;
+    margin-bottom: $mb-3;
+  }
+  .section-subtitle{
+    display: block;
+    font-size:$smaller-font-size;
+    font-weight:$font-semi-bold;
+  }
+  
+  /*===== LAYOUT =====*/
+  .bd-container{
+    max-width: 1024px;
+    width: calc(100% - 2rem);
+    margin-left: $mb-2;
+    margin-right: $mb-2;
+  }
+  .l-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-fixed;
+    background-color: #000000;
+  }
+  .button{
+    @include boton();
+  }
+  .button-light{
+    color: $first-color-lighten;
+  }

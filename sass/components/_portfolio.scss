@@ -1,0 +1,37 @@
+.portfolio{
+    &__section{
+        margin-top: 6rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__card, &__card-r{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+    }
+}
+.card{
+    &__img{
+        width: 250px;
+        height: 150px;
+        margin: 1rem auto;
+    }
+    &__img img{
+        border-radius: 20px;
+    }
+    &__data p{
+        font-weight: 400;
+        text-align: justify;
+        color: black;
+        margin-top: $mb-4
+    }
+}
+.technologies{
+    display: flex;
+    font-size: $mb-3;
+    margin-top: $mb-1;
+}
+.technologies i{
+    margin-right: $mb-4;
+}
