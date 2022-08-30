@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/favicon.ico">
     <title>Joalin Pineda</title>
 </head>
 <body>
@@ -41,22 +42,22 @@
         <section class="home" id="home">
             <div class="home__container bd-container bd-grid">
                 <div class="home__data">
-                    <span class="home__greeting">Hello! 👋🏻</span>
-                    <p>My name is</p>
+                    <span class="home__greeting">Hola 👋🏻</span>
+                    <p>Mi nombre es</p>
                     <h1 class="home__name">Joalin Pineda</h1>
                 </div>
                 <div class="home__img">
                     <img src="./assets/joalin-profile-picture.jpeg" alt="">
                 </div>
-                <span class="home__profession">Frontend Developer</span>
+                <span class="home__profession">Soy manual QA & automation con pasión por la tecnología.</span>
                 <div class="home__social">
                     <a href="https://github.com/joalinpineda" class="home__social-icon" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/joalinpineda/" class="home__social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <a download= "" href="./assets/pdf/Frontend Developer | Joalin Pineda.pdf" class="button button-light" target="_blank">
+                <!-- <a download= "" href="./assets/pdf/Frontend Developer | Joalin Pineda.pdf" class="button button-light" target="_blank">
                     <i class="fas fa-file-download"></i>
                     <span>Download CV</span>
-                </a>
+                </a> -->
             </div>
         </section>
 
@@ -64,26 +65,57 @@
         <section class="about__section bd-container" id="about">
             <div class="about__container">
                 <div class="about__data">
-                    <span class="section-subtitle">My history</span>
-                    <h2 class="section-title">About me</h2>
-                    <p class="section-title-me">Freelance Frontend developer, I am passionate about creating and developing web apps.</p>
+                    <span class="section-subtitle">Conóceme</span>
+                    <h2 class="section-title">Sobre mi</h2>
+                    <p class="section-subtitle">
+                        Contribuyo con startups y empresas a diseñar, desarrollar e introducir productos digitales de valor, involucrándome en
+                        la implementación de soluciones creativas, innovadoras y de gran performance, basado en el feedback rápido, entregando
+                        valor de forma ágil y ayudando así a mejorar el estilo de vida de las personas y generando experiencias únicas.
+                    </p>
                 </div>
-                <div class="about__skills">
-                    <p>Technologies <br><span>I am confortable using</span></p>
-                    <div class="about__skills-technologies">
-                        <div><i class="fab fa-html5"></i>HTML 5</div>
-                        <div><i class="fab fa-css3-alt"></i>CSS 3</div>
-                        <div><i class="fab fa-js-square"></i>Javascript</div>
-                        <div><i class="fab fa-sass"></i>Sass</div>
-                        <div><i class="fab fa-bootstrap"></i>Bootstrap</div>
-                        <div><i class="fab fa-react"></i>React.js</div>
-                        <div><i class="fab fa-node"></i>Node</div>
-                        <div><i class="fab fa-npm"></i>NPM</div>
-                        <div><i class="fab fa-python"></i>Python</div>
-                        <div><i class="fab fa-git"></i>Git</div>
-                        <div><i class="fab fa-github"></i>Github</div>
-                        <div><i class="fab fa-figma"></i>Figma</div>
+            </div>
+        </section>
+
+        <!--===== What I do =====-->
+        <section class="services__section bd-container" id="about">
+            <div class="services__container">
+                <div class="services__data">
+                    <h2 class="section-title">Qué hago</h2>
+                    <p class="section-title-me">
+                        Como QA engineer, me desempeño en los siguientes aspectos
+                    </p>
+                </div>
+                <div class="services__item">
+                    <div class="services__item-testing service">
+                        <img src="./assets/img/testing.png" alt="Testing">
+                        <h3 class="services-title">Testing</h3>
+                        <p class="services-description">
+                            Diseño, implementación y ejecución de plantes y casos de pruebas.
+                        </p>
+                        <ul class="test-list">
+                            <li>Test batteries</li>
+                            <li>Smoke tests</li>
+                            <li>Functional testing</li>
+                            <li>Regression testing</li>
+                        </ul>
                     </div>
+                    <div class="services__item-bugs service">
+                        <img src="./assets/img/bug-report.png" alt="Testing">
+                        <h3 class="services-title">Reporte de Bugs</h3>
+                        <p class="services-description">
+                            Identificación, reporte y seguimiento de bugs que afectan a la calidad del producto y según su clasificación.
+                        </p>
+                    </div>
+                    <div class="services__item-testing service">
+                        <img src="./assets/img/testing.png" alt="Testing">
+                        <h3 class="services-title">Documentación</h3>
+                        <p class="services-description">
+                            Documentación de pruebas, procesos especializados y knowledage base.
+                        </p>
+                        
+                    </div>
+
+
                 </div>
             </div>
         </section>
@@ -94,10 +126,14 @@
                 <div class="portfolio__data">
                     <span class="section-subtitle">My recents projects</span>
                     <h2 class="section-title">Portfolio</h2>
+                    <p class="section-subtitle">
+                        Conoce mis proyectos y todo lo que voy aprendiendo sobre el maravilloso mundo de la tecnología, el desarrollo de
+                        software y el aseguramiento de la calidad.
+                    </p>
                 </div>
                 <div class="portfolio__card">
                     <div class="card__data">
-                        <h2>Title</h2>
+                        <h2>🐛Bug Report</h2>
                         <div class="technologies">
                             <i class="fab fa-html5"></i>
                             <i class="fab fa-css3-alt"></i>
@@ -175,7 +211,7 @@
             <a href="https://github.com/joalinpineda" class="home__social-icon" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/joalinpineda/" class="home__social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         </div>
-        <span>Coding by © joalinpineda 2021. All rigth reserved.</span>
+        <span>Coding by © joalinpineda 2022. All rights reserved.</span>
     </footer>
 
 

@@ -17,7 +17,11 @@
         width: 250px;
         height: 150px;
         margin: 1rem auto;
-    }
+        border-radius: 38px;
+background: #ffffff;
+box-shadow:  12px 12px 20px #bfbfbf,
+             -12px -12px 20px #ffffff;
+            }
     &__img img{
         border-radius: 20px;
     }

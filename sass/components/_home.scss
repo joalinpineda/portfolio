@@ -26,6 +26,9 @@
     &__profession{
         display: flex;
         justify-content: center;
+        margin-top: $mb-2;
+        font-size: $h3-font-size;
+        text-align: center;
     }
     &__social{
         width: 100px;
@@ -37,5 +40,5 @@
             color: $first-color-lighten;
         }
     }
-   
+
 }

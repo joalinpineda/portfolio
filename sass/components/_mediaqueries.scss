@@ -61,18 +61,11 @@
         align-items: center;
         justify-content: space-around;
       }
-    &__skills-technologies{
-      grid-template-rows: repeat(3, 1fr);
-      grid-template-columns: repeat(4, 1fr);
-      gap: $mb-3;
-    }
-    &__data{
-      width: 30vw;
-    }
   }
   .section-title-me{
     padding: $mb-4
   }
+
   .portfolio{
     &__card{
       flex-direction: row;
@@ -91,12 +84,26 @@
       margin-bottom: 4rem;
     }
   }
-   
+  .services__item{
+    flex-direction: row;
+  }
+  .service{
+    margin-top: 0;
+    padding-right: $mb-6;
+    padding-left: $mb-6;
+  }
 }
 
 
 @media screen and (min-width: 1200px){
-  .nav{
-    justify-content: flex-start;
+ 
+  .portfolio__section{
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .services__item{
+    padding: $mb-5;
   }
 }

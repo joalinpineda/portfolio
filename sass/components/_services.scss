@@ -1,0 +1,22 @@
+.services__item{
+    display: flex;
+    flex-direction: column;
+}
+.service{
+    margin-top: $mb-2;
+    margin-bottom: $mb-4;
+    padding-right: auto;
+    padding-left: auto;
+}
+.services__section{
+    flex-direction: column;
+    padding-top: 3rem;
+}
+.test-list{
+    list-style: inside;
+    margin-left: $mb-1;
+    margin-top: $mb-2
+}
+.test-list li::marker{
+    color: $highlighted-color;
+}
