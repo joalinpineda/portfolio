@@ -55,7 +55,7 @@ img {
 
 .section-subtitle {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.938rem;
   font-weight: 600;
 }
 
@@ -132,6 +132,18 @@ img {
   color: #7B6F71;
 }
 
+#conect {
+  border: 2px solid #008DB7;
+  border-radius: 20px;
+  width: 200px;
+  padding: 0.2rem;
+}
+#conect:hover {
+  color: whitesmoke;
+  background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+  border: 2px solid #006175;
+}
+
 .nav__logo, .nav__toggle {
   color: #EAEEF0;
 }
@@ -162,7 +174,7 @@ img {
   left: 0;
   width: 65%;
   height: 3px;
-  background-color: #7B6F71;
+  background-color: #008DB7;
 }
 
 /* Change background header */
@@ -301,13 +313,21 @@ img {
 .services__item {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .service {
   margin-top: 1rem;
   margin-bottom: 2rem;
-  padding-right: auto;
-  padding-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service-img {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  filter: opacity(0.5);
 }
 
 .services__section {
@@ -326,49 +346,130 @@ img {
 }
 
 .portfolio__section {
-  margin-top: 6rem;
   margin-left: auto;
   margin-right: auto;
   padding-top: 3rem;
 }
-.portfolio__card, .portfolio__card-r {
+.portfolio__main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 4rem;
+  justify-content: center;
+}
+.portfolio__main-cta {
+  border: 2px solid #008DB7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 70vw;
+  height: 3rem;
+  margin: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+  transition: 200ms ease-in;
+}
+.portfolio__cards {
+  display: grid;
+  place-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.portfolio__card {
+  border-radius: 20px;
+  padding: 1rem;
+  border-radius: 50px;
+  background: #ffffff;
+  transition: 200ms ease-in;
+}
+.portfolio__card-img img {
+  border-radius: 35px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 280px;
+}
+.portfolio__card-title {
+  font-size: 1.125rem;
+  color: #008DB7;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+.portfolio__card:hover {
+  transform: scale(1.02);
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
 }
 
-.card__img {
-  width: 250px;
-  height: 150px;
-  margin: 1rem auto;
-  border-radius: 38px;
-  background: #ffffff;
-  box-shadow: 12px 12px 20px #bfbfbf, -12px -12px 20px #ffffff;
+.portfolio__main-cta:hover {
+  transform: scale(1.02);
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
 }
-.card__img img {
-  border-radius: 20px;
+
+.experience__section {
+  padding-top: 3rem;
 }
-.card__data p {
-  font-weight: 400;
-  text-align: justify;
-  color: black;
+.experience__item img {
+  width: 3rem;
+}
+.experience__achieves {
   margin-top: 2rem;
 }
 
-.technologies {
-  display: flex;
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
+.company-name, .item-role, .experience__achieves > h3 {
+  font-size: 1.125rem;
 }
 
-.technologies i {
-  margin-right: 2rem;
+.item-role > p > i {
+  color: #7B6F71;
+  font-size: 0.75rem;
+}
+
+.experience-paragraph {
+  margin-top: 1.5rem;
+  font-size: 0.938rem;
+}
+.experience-paragraph > li > a {
+  color: #7B6F71;
+}
+.experience-paragraph > li > a:hover {
+  text-decoration: underline;
+  color: #2F0A0D;
+}
+
+.experience-paragraph > li, .experience__achieves-list > li {
+  list-style: inside;
+  margin-left: 0.5rem;
+}
+
+.experience-paragraph > li::marker, .experience__achieves-list > li::marker {
+  color: #008DB7;
+}
+
+.experience__achieves-list {
+  margin-bottom: 1rem;
+}
+
+.platzi-profile {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.platzi-profile > a {
+  color: #7B6F71;
+}
+.platzi-profile > a:hover {
+  color: #008DB7;
 }
 
 .contact__section {
   margin-top: 6rem;
+  margin-bottom: 3rem;
   padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #e3e3e3;
+  border-radius: 20px;
 }
 .contact__me {
   display: flex;
@@ -381,6 +482,9 @@ img {
 .contact__linkedin {
   display: block;
 }
+.contact__linkedin > a {
+  color: #7B6F71;
+}
 .contact__icon {
   font-size: 1.5rem;
   color: #646464;
@@ -388,6 +492,16 @@ img {
 .contact__mail .button {
   display: flex;
   align-items: center;
+}
+.contact-title {
+  font-size: 2rem;
+  color: #008DB7;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.fa-linkedin-in:hover {
+  color: #0e76a8;
 }
 
 footer {
@@ -467,14 +581,14 @@ footer > span {
   .section-title-me {
     padding: 2rem;
   }
+  .portfolio__cards {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
   .portfolio__card {
-    flex-direction: row;
-  }
-  .portfolio__card-r {
-    flex-direction: row-reverse;
-  }
-  .card__data {
-    width: 50vw;
+    width: 80%;
+    border-radius: 50px;
   }
   .contact__me {
     flex-direction: row;
@@ -489,6 +603,13 @@ footer > span {
     padding-right: 3rem;
     padding-left: 3rem;
   }
+  .portfolio__main {
+    flex-direction: row;
+  }
+  .experience__item {
+    margin: auto;
+    width: 50vw;
+  }
 }
 @media screen and (min-width: 1200px) {
   .portfolio__section {
@@ -499,5 +620,8 @@ footer > span {
   }
   .services__item {
     padding: 2.5rem;
+  }
+  .about__data > p {
+    width: 60vw;
   }
 }/*# sourceMappingURL=style.css.map */

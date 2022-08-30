@@ -67,16 +67,20 @@
   }
 
   .portfolio{
+    &__cards{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
+        // gap: $mb-2;
+       
+      }
     &__card{
-      flex-direction: row;
-    }
-    &__card-r{
-      flex-direction: row-reverse;
-    }
+      width: 80%;
+      border-radius: 50px;
   }
-  .card__data{
-    width: 50vw;
+
   }
+
   .contact{
     &__me{
       flex-direction: row;
@@ -92,6 +96,13 @@
     padding-right: $mb-6;
     padding-left: $mb-6;
   }
+  .portfolio__main{
+    flex-direction: row;
+  }
+  .experience__item{
+    margin: auto;
+    width: 50vw;
+  }
 }
 
 
@@ -105,5 +116,9 @@
   }
   .services__item{
     padding: $mb-5;
+  }
+  
+  .about__data > p{
+    width: 60vw;
   }
 }

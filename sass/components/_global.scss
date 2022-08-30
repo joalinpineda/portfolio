@@ -55,6 +55,7 @@ $z-fixed: 100;
       $small-font-size: .875rem;
       $smaller-font-size: .813rem;
   }
+
   
 html{
     scroll-behavior: smooth;
@@ -106,7 +107,7 @@ h1,h2,h3,ul,p{
   }
   .section-subtitle{
     display: block;
-    font-size:$smaller-font-size;
+    font-size:$normal-font-size;
     font-weight:$font-semi-bold;
   }
   

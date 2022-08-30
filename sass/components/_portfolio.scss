@@ -1,42 +1,67 @@
 .portfolio{
     &__section{
-        margin-top: 6rem;
+        // margin-top: 6rem;
         margin-left: auto;
         margin-right: auto;
         padding-top: $mb-6;
     }
-    &__card, &__card-r{
+    &__main{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 4rem;
+        justify-content: center;
+        &-cta {
+            border: 2px solid $highlighted-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            width: 70vw;
+            height: $mb-6;
+            margin: $mb-2;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+            transition: 200ms ease-in;
+        }
     }
-}
-.card{
-    &__img{
-        width: 250px;
-        height: 150px;
-        margin: 1rem auto;
-        border-radius: 38px;
-background: #ffffff;
-box-shadow:  12px 12px 20px #bfbfbf,
-             -12px -12px 20px #ffffff;
-            }
-    &__img img{
+    &__cards{
+        display: grid;
+        place-content: center;
+        gap: $mb-4;
+        margin-top: $mb-4;
+    }
+    &__card{
+        // width: 80vw;
+        // border: 1px solid $highlighted-color;
         border-radius: 20px;
+        padding: $mb-2;
+        border-radius: 50px;
+        background: #ffffff;
+        transition: 200ms ease-in;
+        &-img img{
+            border-radius: 35px;
+            width: 100%;
+            object-fit: cover;
+            height: 280px;
+        }
+        &-title{
+            font-size: $h3-font-size;
+            color: $highlighted-color;
+            margin-top: $mb-2;
+            margin-bottom: $mb-2;
+            padding-left: $mb-2;
+        }
     }
-    &__data p{
-        font-weight: 400;
-        text-align: justify;
-        color: black;
-        margin-top: $mb-4
+    &__card:hover{
+        transform: scale(1.02);
+        box-shadow:  20px 20px 60px #d9d9d9,
+        -20px -20px 60px #ffffff;
     }
 }
-.technologies{
-    display: flex;
-    font-size: $mb-3;
-    margin-top: $mb-1;
-}
-.technologies i{
-    margin-right: $mb-4;
+.portfolio__main-cta:hover{
+    transform: scale(1.02);
+    box-shadow:  20px 20px 60px #d9d9d9,
+    -20px -20px 60px #ffffff;
 }

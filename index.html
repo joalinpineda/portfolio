@@ -1,223 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./assets/favicon.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
     <title>Joalin Pineda</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--===== SCROLL TOP =====-->
     <a href="#" class="scrolltop" id="scroll-top">
-        <i class="fas fa-angle-up"></i>
+      <i class="fas fa-angle-up"></i>
     </a>
-    
+
     <!--===== HEADER =====-->
     <header class="l-header" id="header">
-        <nav class="nav bd-container">
-            <a href="#" class="nav__logo">Joalin Pineda</a>
+      <nav class="nav bd-container">
+        <a href="#" class="nav__logo">Joalin Pineda</a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                </ul>
-            </div>
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Sobre mi</a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link" id="conect">Get in touch</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
     </header>
 
     <main class="l-main">
-        <!--===== HOME =====-->
-        <section class="home" id="home">
-            <div class="home__container bd-container bd-grid">
-                <div class="home__data">
-                    <span class="home__greeting">Hola 👋🏻</span>
-                    <p>Mi nombre es</p>
-                    <h1 class="home__name">Joalin Pineda</h1>
-                </div>
-                <div class="home__img">
-                    <img src="./assets/joalin-profile-picture.jpeg" alt="">
-                </div>
-                <span class="home__profession">Soy manual QA & automation con pasión por la tecnología.</span>
-                <div class="home__social">
-                    <a href="https://github.com/joalinpineda" class="home__social-icon" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/joalinpineda/" class="home__social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <!-- <a download= "" href="./assets/pdf/Frontend Developer | Joalin Pineda.pdf" class="button button-light" target="_blank">
+      <!--===== HOME =====-->
+      <section class="home" id="home">
+        <div class="home__container bd-container bd-grid">
+          <div class="home__data">
+            <span class="home__greeting">Hola 👋🏻</span>
+            <p>Mi nombre es</p>
+            <h1 class="home__name">Joalin Pineda</h1>
+          </div>
+          <div class="home__img">
+            <img src="./assets/joalin-profile-picture.jpeg" alt="" />
+          </div>
+          <span class="home__profession"
+            >Soy manual QA & automation con pasión por la tecnología.</span
+          >
+          <div class="home__social">
+            <a
+              href="https://github.com/joalinpineda"
+              class="home__social-icon"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/joalinpineda/"
+              class="home__social-icon"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+          <!-- <a download= "" href="./assets/pdf/Frontend Developer | Joalin Pineda.pdf" class="button button-light" target="_blank">
                     <i class="fas fa-file-download"></i>
                     <span>Download CV</span>
                 </a> -->
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about__section bd-container" id="about">
+        <div class="about__container">
+          <div class="about__data">
+            <span class="section-subtitle">Conóceme</span>
+            <h2 class="section-title">Sobre mi</h2>
+            <p class="section-subtitle">
+              Contribuyo con startups y empresas a diseñar, desarrollar e
+              introducir productos digitales de valor, involucrándome en la
+              implementación de soluciones creativas, innovadoras y de gran
+              performance, basado en el feedback rápido, entregando valor de
+              forma ágil y ayudando así a mejorar el estilo de vida de las
+              personas y generando experiencias únicas.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== What I do =====-->
+      <section class="services__section bd-container">
+        <div class="services__container">
+          <div class="services__data">
+            <h2 class="section-title">Qué hago</h2>
+            <p class="section-subtitle">
+              Como QA engineer, me desempeño en los siguientes aspectos
+            </p>
+          </div>
+          <div class="services__item section-subtitle">
+            <div class="services__item-testing service">
+              <img
+                class="service-img"
+                src="./assets/svg/bx-test-tube.svg"
+                alt="Testing"
+              />
+              <h3 class="services-title">Testing</h3>
+              <p class="services-description">
+                Diseño, implementación y ejecución de plantes y casos de
+                pruebas.
+              </p>
+              <ul class="test-list">
+                <li>Test batteries</li>
+                <li>Smoke tests</li>
+                <li>Functional testing</li>
+                <li>Regression testing</li>
+              </ul>
             </div>
-        </section>
-
-        <!--===== ABOUT =====-->
-        <section class="about__section bd-container" id="about">
-            <div class="about__container">
-                <div class="about__data">
-                    <span class="section-subtitle">Conóceme</span>
-                    <h2 class="section-title">Sobre mi</h2>
-                    <p class="section-subtitle">
-                        Contribuyo con startups y empresas a diseñar, desarrollar e introducir productos digitales de valor, involucrándome en
-                        la implementación de soluciones creativas, innovadoras y de gran performance, basado en el feedback rápido, entregando
-                        valor de forma ágil y ayudando así a mejorar el estilo de vida de las personas y generando experiencias únicas.
-                    </p>
-                </div>
+            <div class="services__item-bugs service">
+              <img
+                class="service-img"
+                src="./assets/svg/bx-bug.svg"
+                alt="Testing"
+              />
+              <h3 class="services-title">Reporte de Bugs</h3>
+              <p class="services-description">
+                Identificación, reporte y seguimiento de bugs que afectan a la
+                calidad del producto y según su clasificación.
+              </p>
             </div>
-        </section>
-
-        <!--===== What I do =====-->
-        <section class="services__section bd-container" id="about">
-            <div class="services__container">
-                <div class="services__data">
-                    <h2 class="section-title">Qué hago</h2>
-                    <p class="section-title-me">
-                        Como QA engineer, me desempeño en los siguientes aspectos
-                    </p>
-                </div>
-                <div class="services__item">
-                    <div class="services__item-testing service">
-                        <img src="./assets/img/testing.png" alt="Testing">
-                        <h3 class="services-title">Testing</h3>
-                        <p class="services-description">
-                            Diseño, implementación y ejecución de plantes y casos de pruebas.
-                        </p>
-                        <ul class="test-list">
-                            <li>Test batteries</li>
-                            <li>Smoke tests</li>
-                            <li>Functional testing</li>
-                            <li>Regression testing</li>
-                        </ul>
-                    </div>
-                    <div class="services__item-bugs service">
-                        <img src="./assets/img/bug-report.png" alt="Testing">
-                        <h3 class="services-title">Reporte de Bugs</h3>
-                        <p class="services-description">
-                            Identificación, reporte y seguimiento de bugs que afectan a la calidad del producto y según su clasificación.
-                        </p>
-                    </div>
-                    <div class="services__item-testing service">
-                        <img src="./assets/img/testing.png" alt="Testing">
-                        <h3 class="services-title">Documentación</h3>
-                        <p class="services-description">
-                            Documentación de pruebas, procesos especializados y knowledage base.
-                        </p>
-                        
-                    </div>
-
-
-                </div>
+            <div class="services__item-testing service">
+              <img
+                class="service-img"
+                src="./assets/svg/bx-book-bookmark.svg"
+                alt="Testing"
+              />
+              <h3 class="services-title">Documentación</h3>
+              <p class="services-description">
+                Documentación de pruebas, procesos especializados y knowledage
+                base.
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!--===== PORTFOLIO =====-->
-        <section class="portfolio__section bd-container" id="portfolio">
-            <div class="portfolio__container">
-                <div class="portfolio__data">
-                    <span class="section-subtitle">My recents projects</span>
-                    <h2 class="section-title">Portfolio</h2>
-                    <p class="section-subtitle">
-                        Conoce mis proyectos y todo lo que voy aprendiendo sobre el maravilloso mundo de la tecnología, el desarrollo de
-                        software y el aseguramiento de la calidad.
-                    </p>
-                </div>
-                <div class="portfolio__card">
-                    <div class="card__data">
-                        <h2>🐛Bug Report</h2>
-                        <div class="technologies">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-js-square"></i>
-                        </div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis nulla non suscipit eveniet nemo at hic rem cumque. Praesentium iusto laboriosam tenetur, iste aspernatur nulla dignissimos corrupti magni. Ex, facilis!</p>
-                    </div>
-                    <div class="card__img">
-                        <img src="./assets/img/Portfolio.jpg" alt="">
-                    </div>
-                </div>
-                <div class="portfolio__card-r">
-                    <div class="card__data">
-                        <h2>Title</h2>
-                        <div class="technologies">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-js-square"></i>
-                        </div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis nulla non suscipit eveniet nemo at hic rem cumque. Praesentium iusto laboriosam tenetur, iste aspernatur nulla dignissimos corrupti magni. Ex, facilis!</p>
-                    </div>
-                    <div class="card__img">
-                        <img src="./assets/img/Portfolio.jpg" alt="">
-                    </div>
-                </div>
-                <div class="portfolio__card">
-                    <div class="card__data">
-                        <h2>Title</h2>
-                        <div class="technologies">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-js-square"></i>
-                        </div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis nulla non suscipit eveniet nemo at hic rem cumque. Praesentium iusto laboriosam tenetur, iste aspernatur nulla dignissimos corrupti magni. Ex, facilis!</p>
-                    </div>
-                    <div class="card__img">
-                        <img src="./assets/img/Portfolio.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
+      <!--===== PORTFOLIO =====-->
+      <section class="portfolio__section bd-container" id="portfolio">
+        <div class="portfolio__container">
+          <div class="portfolio__data">
+            <span class="section-subtitle">Mis proyectos recientes</span>
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-subtitle">
+              Conoce mis proyectos y todo lo que voy aprendiendo sobre el
+              maravilloso mundo de la tecnología, el desarrollo de software y el
+              aseguramiento de la calidad.
+            </p>
+          </div>
+          <div class="portfolio__main">
+            <a
+              href="https://joalin.notion.site/Plan-de-Implementaci-n-de-QA-5bf4bce6c4e245fba1eeb65f1fe06d79"
+              target="_blank"
+              class="portfolio__main-cta"
+              >🧪Plan de implementación de QA</a
+            >
+            <a
+              href="https://joalin.notion.site/Blog-d9cc628919c7482a8a793ecbe1f92e8d"
+              target="_blank"
+              class="portfolio__main-cta"
+              >✍️Mi blog</a
+            >
+          </div>
 
-        <!--===== CONTACT =====-->
-        <section class="contact__section bd-container" id="contact">
-            <div class="contact__container">
-                <div class="contact__data">
-                    <span class="section-subtitle">Lets do something amazing</span>
-                    <h2 class="section-title">Contact</h2>
-                </div>
-                <div class="contact__me">
-                    <div class="contact__location">
-                        <i class="fas fa-map-marker-alt contact__icon"></i>
-                        <h3>Location</h3>
-                        <p>México, CDMX</p>
-                    </div>
-                    <div class="contact__linkedin">
-                        <a href="https://www.linkedin.com/in/joalinpineda/" class="home__social-icon" target="_blank"><i class="fab fa-linkedin-in contact__icon"></i></a>
-                        <p>/in/joalinpineda</p>
-                    </div>
-                    <div class="contact__mail">
-                        <h3>Send me a mail</h3>
-                        <a class="button button-light" href="mailto:joalin.pineda@gmail.com" target="_blank">
-                            <i class="fas fa-envelope contact__icon"></i>
-                        </a>
-                    </div>
-                </div>
+          <!-- CARDS -->
+          <section class="portfolio__cards">
+            <div class="portfolio__card">
+              <div class="portfolio__card__data">
+                <a
+                  href="https://joalin.notion.site/Bug-reports-19b3fc7cd7fe49de9d6a0189f1cf52c0"
+                  target="_blank"
+                >
+                  <div class="portfolio__card-img">
+                    <img
+                      src="https://images-cdn.9gag.com/photo/aGjWLWK_700b.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <h2 class="portfolio__card-title">🐛Bug Reports Tracking</h2>
+                </a>
+              </div>
             </div>
-        </section>
+
+            <div class="portfolio__card">
+              <div class="portfolio__card__data">
+                <a
+                  href="https://joalin.notion.site/Bug-reports-19b3fc7cd7fe49de9d6a0189f1cf52c0"
+                  target="_blank"
+                >
+                  <div class="portfolio__card-img">
+                    <img
+                      src="https://images.pexels.com/photos/12903147/pexels-photo-12903147.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      alt=""
+                    />
+                  </div>
+                  <h2 class="portfolio__card-title">🧪Test Battery v.2</h2>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio__card">
+              <div class="portfolio__card__data">
+                <a
+                  href="https://joalin.notion.site/Bug-reports-19b3fc7cd7fe49de9d6a0189f1cf52c0"
+                  target="_blank"
+                >
+                  <div class="portfolio__card-img">
+                    <img
+                      src="https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                      alt=""
+                    />
+                  </div>
+                  <h2 class="portfolio__card-title">🔋Test Battery v.1</h2>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio__card">
+              <div class="portfolio__card__data">
+                <a
+                  href="https://joalin.notion.site/Bug-reports-19b3fc7cd7fe49de9d6a0189f1cf52c0"
+                  target="_blank"
+                >
+                  <div class="portfolio__card-img">
+                    <img
+                      src="https://images.pexels.com/photos/360976/pexels-photo-360976.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      alt=""
+                    />
+                  </div>
+                  <h2 class="portfolio__card-title">🏭Smoke Test</h2>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!--===== Work experience =====-->
+      <section class="experience__section bd-container">
+        <div class="experience__container">
+          <div class="experience__data">
+            <h2 class="section-title">💼 Experiencia laboral</h2>
+          </div>
+
+          <div class="experience__item bd-container">
+            <img src="./assets/img/platzi-logo.webp" alt="" />
+            <h3 class="company-name">Platzi</h3>
+            <div class="item-role">
+              <p>QA associate - Learning team</p>
+              <p><i>Noviembre 2021 - Actual</i></p>
+            </div>
+            <section>
+              <p class="experience-paragraph">
+                Contribuyo al aseguramiento de la calidad, trabajando en
+                conjunto con diferentes equipos, ofreciendo un producto de alta
+                calidad en educación usado por
+                <strong>más de 3 millones</strong> de estudiantes en Latam.
+              </p>
+              <ul class="experience-paragraph">
+                <li>
+                  Proveer fedback continuo al equipo para iterar en mejores
+                  resultados.
+                </li>
+                <li>
+                  Identificación, seguimiento y resolución de bugs de educación.
+                </li>
+                <li>Apoyo en la documentación del knowledge base.</li>
+                <li>
+                  Resolución de dudas técnicas de estudiantes de la plataforma
+                </li>
+                <li>Testear las nuevas features de la plataforma.</li>
+              </ul>
+            </section>
+            <section class="experience__achieves">
+              <h3>🎖️Logros</h3>
+              <ul class="experience__achieves-list">
+                <li>
+                  Diseñe una rubrica de evaluación de la calidad del producto.
+                </li>
+                <li>
+                  Participe en un hackaton para integrar métricas al equipo.
+                </li>
+                <li>
+                  Desarrollé un template simple para la optimización del proceso
+                  de QA reduciendo el margen de errores e integración del
+                  proceso.
+                </li>
+              </ul>
+            </section>
+
+            <div class="item-role">
+              <p>QA training - Product team</p>
+              <p><i>Marzo - junio 2022</i></p>
+            </div>
+            <section>
+              <p class="experience-paragraph">
+                Formé parte del plan de carrera de QA dentro del equipo de
+                producto.
+              </p>
+              <ul class="experience-paragraph">
+                <li>Fundamentos de las pruebas de software.</li>
+                <li>Diseño de planes de prueba y casos de prueba.</li>
+                <li>Detectar, reportar y reproducir bugs.</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!--===== Education =====-->
+      <section class="experience__section bd-container">
+        <div class="experience__container">
+          <div class="experience__data">
+            <h2 class="section-title">🎓 Educación</h2>
+          </div>
+
+          <div class="experience__item bd-container">
+            <img src="./assets/img/platzi-logo.webp" alt="" />
+            <h3 class="company-name">Platzi</h3>
+            <section>
+              <p class="experience-paragraph">
+                Platzi es una plataforma de educación online donde me mantengo
+                aprendiendo continuamente sobre los temas y tecnologías más
+                demandadas en la industria, además de habilidades blandas e
+                inglés.
+              </p>
+              <p class="certifitacion-title">Algunas de mis certificaciónes</p>
+              <ul class="experience-paragraph">
+                <li><a href="https://platzi.com/p/joalinpineda/curso/1421-pruebas-software/diploma/detalle/">Fundamentos de Pruebas de Software</a></li>
+                <li><a href="https://platzi.com/p/joalinpineda/curso/2620-automatizacion-pruebas/diploma/detalle/">Introducción a la Automatización de Pruebas</a></li>
+                <li><a href="https://platzi.com/p/joalinpineda/curso/3075-cypress-ui/diploma/detalle/">Automatización de Pruebas UI con Cypress</a></li>
+                <li><a href="https://platzi.com/p/joalinpineda/curso/1566-bd/diploma/detalle/">Fundamentos de Bases de Datos</a></li>
+                <li><a href="https://platzi.com/p/joalinpineda/curso/2008-html-css/diploma/detalle/">Curso Definitivo de HTMl y CSS</a></li>
+                <li><a href="https://platzi.com/p/joalinpineda/ruta/100-escuela-javascript/diploma/detalle/">Full Stack Developer con JavaScript</a></li>
+                <li><a href="https://platzi.com/p/joalinpineda/curso/1867-devtools/diploma/detalle/">Debugging con Chrome DevTools</a></li>
+              </ul>
+              <p class="platzi-profile">
+                <a href="https://platzi.com/p/joalinpineda/">
+                  👉Visita mi perfil de Platzi</a
+                >
+              </p>
+            </section>
+          </div>
+
+          <div class="experience__item bd-container">
+            <img
+              src="https://joalinpineda.super.site/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F1cf3ac46-dbdd-4ca8-a91a-c9b7c9a0d298%2Fimages%2Fa2e0ce78-1289-4028-84ad-2c5e244c1854.png&w=640&q=80"
+              alt=""
+            />
+            <h3 class="company-name">
+              Universidad Nacional Autónoma de México
+            </h3>
+            <p>Ingeniería en computación</p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== CONTACT =====-->
+      <section class="contact__section bd-container" id="contact">
+        <div class="contact__container">
+          <div class="contact__data">
+            <span class="section-subtitle">Contacto</span>
+            <h2 class="contact-title">✨¡Comenzemos una idea!✨</h2>
+          </div>
+          <div class="contact__me">
+            <div class="contact__location">
+              <i class="fas fa-map-marker-alt contact__icon"></i>
+              <h3>Location</h3>
+              <p>México, CDMX</p>
+            </div>
+            <div class="contact__linkedin">
+              <a
+                href="https://www.linkedin.com/in/joalinpineda/"
+                class="home__social-icon"
+                target="_blank"
+                ><i class="fab fa-linkedin-in contact__icon"></i>
+                <p>/in/joalinpineda</p>
+            </a>
+            </div>
+            <div class="contact__mail">
+              <h3>Send me a mail</h3>
+              <a
+                class="button button-light"
+                href="mailto:joalin.pineda@gmail.com"
+                target="_blank"
+              >
+                <i class="fas fa-envelope contact__icon"></i>
+              </a>
+            </div>
+          </div>
+          <img src="./assets/favicon.ico" style="width: 80px; height: 80px; margin: auto;"alt="">
+        </div>
+      </section>
+
     </main>
 
     <footer>
-        <h2>Joalin Pineda</h2>
-        <p>My personal web site, you can  consult me here.</p>
-        <div class="home__social">
-            <a href="https://github.com/joalinpineda" class="home__social-icon" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/joalinpineda/" class="home__social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-        <span>Coding by © joalinpineda 2022. All rights reserved.</span>
+      <h2>Joalin Pineda</h2>
+      <p>My personal web site, you can consult me here.</p>
+      <div class="home__social">
+        <a
+          href="https://github.com/joalinpineda"
+          class="home__social-icon"
+          target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/joalinpineda/"
+          class="home__social-icon"
+          target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+      </div>
+      <span>Coding by © joalinpineda 2022. All rights reserved.</span>
     </footer>
 
-
-      
-
-
-<script src="./js/main.js"></script>
-</body>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

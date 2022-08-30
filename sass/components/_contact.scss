@@ -1,7 +1,11 @@
 .contact{
     &__section{
         margin-top: 6rem;
+        margin-bottom: $mb-6;
         padding-top: $mb-6;
+        padding-bottom: $mb-6;
+        background-color: #e3e3e3;
+        border-radius: 20px;
     }
     &__me{
         display: flex;
@@ -13,6 +17,9 @@
     }
     &__linkedin{
     display: block;
+    & > a {
+        color: $first-color-light;
+        }
     }
     &__icon{
         font-size: $h1-font-size;
@@ -22,5 +29,14 @@
         display: flex;
         align-items: center;
     }
+    &-title{
+        font-size: 2rem;
+        color: $highlighted-color;
+        text-align: center;
+        margin-bottom: $mb-2;
+    }
 
+}
+.fa-linkedin-in:hover{
+    color: #0e76a8;
 }

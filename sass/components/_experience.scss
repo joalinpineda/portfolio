@@ -1,0 +1,54 @@
+.experience{
+    &__container{
+    
+    }
+    &__section{
+        padding-top: $mb-6;
+    }
+    &__item img{
+        width: 3rem;
+    }
+    &__achieves{
+        margin-top: $mb-4;
+    }
+}
+.company-name, .item-role, .experience__achieves > h3{
+    font-size: $h3-font-size;
+}
+.item-role > p > i {
+    color: $first-color-light;
+    font-size: $smaller-font-size;
+
+}
+.experience-paragraph{
+    margin-top: $mb-3;
+    font-size: $normal-font-size;
+    & > li > a{
+        color: $first-color-light;
+    }
+    & > li > a:hover{
+        text-decoration: underline;
+        color: $first-color-dark;
+    }
+}
+.experience-paragraph > li,  .experience__achieves-list >li{
+    list-style: inside;
+    margin-left: $mb-1;
+    
+}
+.experience-paragraph > li::marker,  .experience__achieves-list >li::marker{
+    color: $highlighted-color;
+}
+.experience__achieves-list{
+    margin-bottom: $mb-2;
+}
+.platzi-profile{
+    margin-top: $mb-2;
+    margin-bottom: $mb-2;
+    & > a{
+        color: $first-color-light;
+    }
+    & > a:hover{
+        color: $highlighted-color;
+    }
+}

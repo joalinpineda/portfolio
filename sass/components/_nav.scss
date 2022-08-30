@@ -26,6 +26,7 @@
       justify-content: space-evenly;
     }
   }
+
   .nav_item{
     margin-top: $mb-3;
   }
@@ -35,6 +36,17 @@
   }
   .nav__link:hover{
     color: $first-color-light;
+  }
+  #conect{
+    border: 2px solid $highlighted-color;
+    border-radius: 20px;
+    width: 200px;
+    padding: 0.2rem;
+    &:hover{
+      color: whitesmoke;
+      background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+      border: 2px solid #006175;
+    }
   }
   .nav__logo, .nav__toggle{
     color: $first-color-lighten;
@@ -63,7 +75,7 @@
     left: 0;
     width: 65%;
     height: 3px;
-    background-color: $first-color-light;
+    background-color: $highlighted-color;
   }
   
   /* Change background header */
