@@ -27,7 +27,7 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./assets/favicon.ico" />
-    <title>Joalin Pineda</title>
+    <title>Joalin Pineda | QA & Python Dev</title>
   </head>
   <body>
     <!--===== SCROLL TOP =====-->
@@ -46,11 +46,11 @@
               <a href="#home" class="nav__link active-link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#about" class="nav__link">Sobre mi</a>
+              <a href="#about" class="nav__link">About me</a>
             </li>
-            <li class="nav__item">
+            <!-- <li class="nav__item">
               <a href="#portfolio" class="nav__link">Portfolio</a>
-            </li>
+            </li> -->
             <li class="nav__item">
               <a href="#contact" class="nav__link" id="conect">Get in touch</a>
             </li>
@@ -67,16 +67,17 @@
       <section class="home" id="home">
         <div class="home__container bd-container bd-grid">
           <div class="home__data">
-            <span class="home__greeting">Hola 👋🏻</span>
-            <p>Mi nombre es</p>
+            <span class="home__greeting">Hello 👋🏻</span>
+            <br>
+            <p>I'm </p>
             <h1 class="home__name">Joalin Pineda</h1>
           </div>
           <div class="home__img">
             <img src="./assets/joalin-profile-picture.jpeg" alt="" />
           </div>
           <span class="home__profession"
-            >Soy manual QA & automation con pasión por la tecnología.</span
-          >
+            >QA Automation Engineer transitioning into Python Backend Development
+            </span>
           <div class="home__social">
             <a
               href="https://github.com/joalinpineda"
@@ -91,10 +92,6 @@
               ><i class="fab fa-linkedin-in"></i
             ></a>
           </div>
-          <!-- <a download= "" href="./assets/pdf/Frontend Developer | Joalin Pineda.pdf" class="button button-light" target="_blank">
-                    <i class="fas fa-file-download"></i>
-                    <span>Download CV</span>
-                </a> -->
         </div>
       </section>
 
@@ -102,15 +99,14 @@
       <section class="about__section bd-container" id="about">
         <div class="about__container">
           <div class="about__data">
-            <span class="section-subtitle">Conóceme</span>
-            <h2 class="section-title">Sobre mi</h2>
+            <span class="section-subtitle">Get to know me</span>
+            <h2 class="section-title">About me</h2>
             <p class="section-subtitle">
-              Contribuyo con startups y empresas a diseñar, desarrollar e
-              introducir productos digitales de valor, involucrándome en la
-              implementación de soluciones creativas, innovadoras y de gran
-              performance, basado en el feedback rápido, entregando valor de
-              forma ágil y ayudando así a mejorar el estilo de vida de las
-              personas y generando experiencias únicas.
+               I am a QA Automation Engineer with over 4 years of experience in software quality, 
+              testing, and automation frameworks.  
+              Currently, I am transitioning into <b>Python</b> backend development with a focus on Django, 
+              FastAPI, and building scalable applications, while leveraging my QA background 
+              to write clean, testable, and reliable code.
             </p>
           </div>
         </div>
@@ -120,52 +116,50 @@
       <section class="services__section bd-container">
         <div class="services__container">
           <div class="services__data">
-            <h2 class="section-title">Qué hago</h2>
+            <h2 class="section-title">What I do</h2>
             <p class="section-subtitle">
-              Como QA engineer, me desempeño en los siguientes aspectos
+               My current work is focused on QA Automation, while I build projects 
+              in Python and backend development.
             </p>
           </div>
           <div class="services__item section-subtitle">
             <div class="services__item-testing service">
               <img
                 class="service-img"
-                src="./assets/svg/bx-test-tube.svg"
+                src="https://cdn-icons-png.flaticon.com/512/2103/2103686.png"
                 alt="Testing"
               />
-              <h3 class="services-title">Testing</h3>
+              <h3 class="services-title">QA Automation</h3>
               <p class="services-description">
-                Diseño, implementación y ejecución de plantes y casos de
-                pruebas.
+                Design and execution of test strategies using Playwright, Cypress, and Selenium.
               </p>
-              <ul class="test-list">
+              <!-- <ul class="test-list">
                 <li>Test batteries</li>
                 <li>Smoke tests</li>
                 <li>Functional testing</li>
                 <li>Regression testing</li>
-              </ul>
+              </ul> -->
             </div>
             <div class="services__item-bugs service">
               <img
                 class="service-img"
-                src="./assets/svg/bx-bug.svg"
+                src="https://cdn-icons-png.flaticon.com/512/16318/16318927.png "
                 alt="Testing"
               />
-              <h3 class="services-title">Reporte de Bugs</h3>
+              <h3 class="services-title">Python Backend</h3>
               <p class="services-description">
-                Identificación, reporte y seguimiento de bugs que afectan a la
-                calidad del producto y según su clasificación.
+                Building REST APIs and backend services with Django & FastAPI.
               </p>
             </div>
             <div class="services__item-testing service">
               <img
                 class="service-img"
-                src="./assets/svg/bx-book-bookmark.svg"
+                src="https://cdn-icons-png.flaticon.com/512/5084/5084070.png "
                 alt="Testing"
               />
-              <h3 class="services-title">Documentación</h3>
+              <h3 class="services-title">CI/CD & Dev Tools</h3>
               <p class="services-description">
-                Documentación de pruebas, procesos especializados y knowledage
-                base.
+                Integration of tests and deployments in Azure DevOps and GitHub Actions.
               </p>
             </div>
           </div>
@@ -173,171 +167,89 @@
       </section>
 
       <!--===== PORTFOLIO =====-->
-      <section class="portfolio__section bd-container" id="portfolio">
-        <div class="portfolio__container">
-          <div class="portfolio__data">
-            <span class="section-subtitle">Mis proyectos recientes</span>
-            <h2 class="section-title">Portfolio</h2>
-            <p class="section-subtitle">
-              Conoce mis proyectos y todo lo que voy aprendiendo sobre el
-              maravilloso mundo de la tecnología, el desarrollo de software y el
-              aseguramiento de la calidad.
-            </p>
-          </div>
-          <div class="portfolio__main">
-            <a
-              href="https://joalin.notion.site/Plan-de-Implementaci-n-de-QA-5bf4bce6c4e245fba1eeb65f1fe06d79"
-              target="_blank"
-              class="portfolio__main-cta"
-              >🧪Plan de implementación de QA</a
-            >
-            <a
-              href="https://www.notion.so/joalin/Blog-5ff09136de6848dcb67707de3846443a"
-              target="_blank"
-              class="portfolio__main-cta"
-              >✍️Mi blog</a
-            >
-          </div>
-
-          <!-- CARDS -->
-          <section class="portfolio__cards">
-            <div class="portfolio__card">
-              <div class="portfolio__card__data">
-                <a
-                  href="https://joalin.notion.site/Bug-reports-19b3fc7cd7fe49de9d6a0189f1cf52c0"
-                  target="_blank"
-                >
-                  <div class="portfolio__card-img">
-                    <img
-                      src="https://images-cdn.9gag.com/photo/aGjWLWK_700b.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <h2 class="portfolio__card-title">🐛Bug Reports Tracking</h2>
-                </a>
-              </div>
-            </div>
-
-            <div class="portfolio__card">
-              <div class="portfolio__card__data">
-                <a
-                  href="https://www.notion.so/joalin/Bater-a-de-Pruebas-2-0-1dc2d51571d64779965e50950869552a"
-                  target="_blank"
-                >
-                  <div class="portfolio__card-img">
-                    <img
-                      src="https://images.pexels.com/photos/12903147/pexels-photo-12903147.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt=""
-                    />
-                  </div>
-                  <h2 class="portfolio__card-title">🧪Test Battery v.2</h2>
-                </a>
-              </div>
-            </div>
-
-            <div class="portfolio__card">
-              <div class="portfolio__card__data">
-                <a
-                  href="https://www.notion.so/joalin/Bater-a-de-pruebas-d65352317c6b45a6b0c615e20480c955"
-                  target="_blank"
-                >
-                  <div class="portfolio__card-img">
-                    <img
-                      src="https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-                      alt=""
-                    />
-                  </div>
-                  <h2 class="portfolio__card-title">🔋Test Battery v.1</h2>
-                </a>
-              </div>
-            </div>
-
-            <div class="portfolio__card">
-              <div class="portfolio__card__data">
-                <a
-                  href="https://www.notion.so/joalin/Smoke-test-c20755b3e3fb41e784711f9e89667315"
-                  target="_blank"
-                >
-                  <div class="portfolio__card-img">
-                    <img
-                      src="https://images.pexels.com/photos/360976/pexels-photo-360976.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                      alt=""
-                    />
-                  </div>
-                  <h2 class="portfolio__card-title">🏭Smoke Test</h2>
-                </a>
-              </div>
-            </div>
-          </section>
-        </div>
-      </section>
 
       <!--===== Work experience =====-->
       <section class="experience__section bd-container">
         <div class="experience__container">
           <div class="experience__data">
-            <h2 class="section-title">💼 Experiencia laboral</h2>
+            <h2 class="section-title">💼 Work Experience</h2>
           </div>
-
           <div class="experience__item bd-container">
-            <img src="./assets/img/platzi-logo.webp" alt="" />
-            <h3 class="company-name">Platzi</h3>
+            <!-- <img src="https://divelement.io/images/divelement-logo.svg" alt="divelement logo"  /> -->
+            <h3 class="company-name">Divelement</h3>
             <div class="item-role">
-              <p>QA associate - Learning team</p>
-              <p><i>Noviembre 2021 - Actual</i></p>
+              <p>QA Automation Engineer</p>
+              <p><i>January 2023 – Present</i></p>
             </div>
             <section>
               <p class="experience-paragraph">
-                Contribuyo al aseguramiento de la calidad, trabajando en
-                conjunto con diferentes equipos, ofreciendo un producto de alta
-                calidad en educación usado por
-                <strong>más de 3 millones</strong> de estudiantes en Latam.
+                I work on ensuring the quality of web applications by designing, executing, 
+                and automating test strategies. My role involves collaborating with developers and product 
+                managers to deliver reliable and scalable solutions. I create and maintain automated test suites 
+                with tools like Cypress, and Playwright, and integrate them into CI/CD pipelines with Azure DevOps.
+              </p>
+              <ul class="experience-paragraph">
+                <li>Implemented automated test suites with Playwright and Cypress.</li>
+                <li>Integrated test automation into CI/CD pipelines with Azure DevOps.</li>
+                <li>Collaborated closely with developers to ensure product reliability.</li>
+              </ul>
+            </section>
+            <br>
+          <div class="experience__item bd-container">
+            <img src="./assets/img/platzi-logo.webp" alt="platzi logo" />
+            <h3 class="company-name">Platzi</h3>
+            <div class="item-role">
+              <p>QA associate - Learning team</p>
+              <p><i>Nov 2021 - Dec 2022</i></p>
+            </div>
+            <section>
+              <p class="experience-paragraph">
+                I contribute to quality assurance by working closely with cross-functional teams, delivering 
+                a high-quality educational product used by over 
+                <strong>3 million students</strong> across Latam.
               </p>
               <ul class="experience-paragraph">
                 <li>
-                  Proveer fedback continuo al equipo para iterar en mejores
-                  resultados.
+                 	Provide continuous feedback to the team to iterate toward better outcomes.
                 </li>
                 <li>
-                  Identificación, seguimiento y resolución de bugs de educación.
+                  	Identify, track, and resolve education-related bugs.
                 </li>
-                <li>Apoyo en la documentación del knowledge base.</li>
+                <li>Support the documentation of the knowledge base.</li>
                 <li>
-                  Resolución de dudas técnicas de estudiantes de la plataforma
+                  Address technical questions from students on the platform.
                 </li>
-                <li>Testear las nuevas features de la plataforma.</li>
+                <li>Test and validate new platform features.</li>
               </ul>
             </section>
             <section class="experience__achieves">
-              <h3>🎖️Logros</h3>
+              <h3>🎖️ Achievements</h3>
               <ul class="experience__achieves-list">
                 <li>
-                  Diseñe una rubrica de evaluación de la calidad del producto.
+                 Designed a product quality evaluation rubric.
                 </li>
                 <li>
-                  Participe en un hackaton para integrar métricas al equipo.
+                  Participated in a hackathon to integrate metrics into the team workflow.
                 </li>
                 <li>
-                  Desarrollé un template simple para la optimización del proceso
-                  de QA reduciendo el margen de errores e integración del
-                  proceso.
+                  Developed a simple QA template that optimized processes, reduced error margins, 
+                  and improved integration.
                 </li>
               </ul>
             </section>
 
             <div class="item-role">
               <p>QA training - Product team</p>
-              <p><i>Marzo - junio 2022</i></p>
+              <p><i>March - June 2022</i></p>
             </div>
             <section>
               <p class="experience-paragraph">
-                Formé parte del plan de carrera de QA dentro del equipo de
-                producto.
+                I took part in the QA career development plan within the Product Team, focusing on:
               </p>
               <ul class="experience-paragraph">
-                <li>Fundamentos de las pruebas de software.</li>
-                <li>Diseño de planes de prueba y casos de prueba.</li>
-                <li>Detectar, reportar y reproducir bugs.</li>
+                <li>Fundamentals of software testing.</li>
+                <li>Design of test plans and test cases.</li>
+                <li>Detecting, reporting, and reproducing bugs.</li>
               </ul>
             </section>
           </div>
@@ -348,7 +260,7 @@
       <section class="experience__section bd-container">
         <div class="experience__container">
           <div class="experience__data">
-            <h2 class="section-title">🎓 Educación</h2>
+            <h2 class="section-title">🎓 Education</h2>
           </div>
 
           <div class="experience__item bd-container">
@@ -356,25 +268,24 @@
             <h3 class="company-name">Platzi</h3>
             <section>
               <p class="experience-paragraph">
-                Platzi es una plataforma de educación online donde me mantengo
-                aprendiendo continuamente sobre los temas y tecnologías más
-                demandadas en la industria, además de habilidades blandas e
-                inglés.
+                 Platzi is an online education platform where I continuously expand my knowledge 
+                in the most in-demand technologies and industry practices, while also developing 
+                soft skills and improving my English proficiency.
               </p>
-              <p class="certifitacion-title">Algunas de mis certificaciónes</p>
+              <p class="certifitacion-title">Selected Certifications</p>
               <ul class="experience-paragraph">
-                <li><a href="https://platzi.com/p/joalinpineda/curso/1421-pruebas-software/diploma/detalle/">Fundamentos de Pruebas de Software</a></li>
-                <li><a href="https://platzi.com/p/joalinpineda/curso/2620-automatizacion-pruebas/diploma/detalle/">Introducción a la Automatización de Pruebas</a></li>
-                <li><a href="https://platzi.com/p/joalinpineda/curso/3075-cypress-ui/diploma/detalle/">Automatización de Pruebas UI con Cypress</a></li>
-                <li><a href="https://platzi.com/p/joalinpineda/curso/1566-bd/diploma/detalle/">Fundamentos de Bases de Datos</a></li>
-                <li><a href="https://platzi.com/p/joalinpineda/curso/2008-html-css/diploma/detalle/">Curso Definitivo de HTMl y CSS</a></li>
-                <li><a href="https://platzi.com/p/joalinpineda/ruta/100-escuela-javascript/diploma/detalle/">Full Stack Developer con JavaScript</a></li>
-                <li><a href="https://platzi.com/p/joalinpineda/curso/1867-devtools/diploma/detalle/">Debugging con Chrome DevTools</a></li>
+                <li><a href="https://platzi.com/p/joalinpineda/curso/1421-pruebas-software/diploma/detalle/">Fundamentals of Software Testing</a></li>
+                <li><a href="https://platzi.com/p/joalinpineda/curso/2620-automatizacion-pruebas/diploma/detalle/">Introduction to Test Automation</a></li>
+                <li><a href="https://platzi.com/p/joalinpineda/curso/3075-cypress-ui/diploma/detalle/">Introduction to Test Automation</a></li>
+                <li><a href="https://platzi.com/p/joalinpineda/curso/1566-bd/diploma/detalle/">Database Fundamentals</a></li>
+                <li><a href="https://platzi.com/p/joalinpineda/curso/2008-html-css/diploma/detalle/">Advanced HTML & CSS</a></li>
+                <li><a href="https://platzi.com/p/joalinpineda/ruta/100-escuela-javascript/diploma/detalle/">Full Stack Developer with JavaScript</a></li>
+                <li><a href="https://platzi.com/p/joalinpineda/curso/1867-devtools/diploma/detalle/">Debugging with Chrome DevTools</a></li>
               </ul>
               <p class="platzi-profile">
                 <a href="https://platzi.com/p/joalinpineda/">
-                  👉Visita mi perfil de Platzi</a
-                >
+                        👉 Visit my Platzi profile
+            </a>
               </p>
             </section>
           </div>
@@ -387,7 +298,7 @@
             <h3 class="company-name">
               Universidad Nacional Autónoma de México
             </h3>
-            <p>Ingeniería en computación</p>
+            <p>Computer Engineering</p>
           </div>
         </div>
       </section>
@@ -396,8 +307,8 @@
       <section class="contact__section bd-container" id="contact">
         <div class="contact__container">
           <div class="contact__data">
-            <span class="section-subtitle">Contacto</span>
-            <h2 class="contact-title">✨¡Comenzemos una idea!✨</h2>
+            <span class="section-subtitle">Contact</span>
+            <h2 class="contact-title">✨Let's Build Something!✨</h2>
           </div>
           <div class="contact__me">
             <div class="contact__location">
@@ -433,7 +344,7 @@
 
     <footer>
       <h2>Joalin Pineda</h2>
-      <p>My personal web site, you can consult me here.</p>
+      <p>Personal website – QA & Python Developer</p>
       <div class="home__social">
         <a
           href="https://github.com/joalinpineda"
@@ -448,7 +359,7 @@
           ><i class="fab fa-linkedin-in"></i
         ></a>
       </div>
-      <span>Coding by © joalinpineda 2022. All rights reserved.</span>
+      <span>© 2025 joalinpineda. All rights reserved.</span>
     </footer>
 
     <script src="./js/main.js"></script>
